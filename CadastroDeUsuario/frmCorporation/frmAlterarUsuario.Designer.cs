@@ -36,9 +36,9 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtSobreNome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -111,12 +111,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "E-MAIL:";
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 198);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtEmail.Location = new System.Drawing.Point(36, 198);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(209, 20);
+            this.txtEmail.TabIndex = 8;
             // 
             // label5
             // 
@@ -128,13 +128,13 @@
             this.label5.Tag = "";
             this.label5.Text = "TELEFONE:";
             // 
-            // textBox2
+            // txtTelefone
             // 
-            this.textBox2.Location = new System.Drawing.Point(36, 268);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 20);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "(  )";
+            this.txtTelefone.Location = new System.Drawing.Point(36, 268);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(152, 20);
+            this.txtTelefone.TabIndex = 10;
+            this.txtTelefone.Text = "(  )";
             // 
             // btnAlterar
             // 
@@ -155,6 +155,7 @@
             this.btnExcluir.TabIndex = 12;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // frmAlterarUsuario
             // 
@@ -164,9 +165,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAlterar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSobreNome);
             this.Controls.Add(this.txtNome);
@@ -177,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAlterarUsuario";
             this.Text = "Alterar e Excluir Usuarios";
+            this.Load += new System.EventHandler(this.frmAlterarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,9 +194,9 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtSobreNome;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnExcluir;
     }

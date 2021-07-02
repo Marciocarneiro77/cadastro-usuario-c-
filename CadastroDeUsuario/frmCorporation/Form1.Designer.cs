@@ -112,6 +112,7 @@
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // Form1
             // 
@@ -130,6 +131,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Cadastro de novos usuários";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
